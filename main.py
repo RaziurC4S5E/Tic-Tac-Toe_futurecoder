@@ -48,6 +48,36 @@ def each_column_check(column): #function to check each column and return True if
                 return False
     return result
 
+def diagonal_winner(board): #diagonal_winner function to check if any diagonal matches either with X or O
+    result = False
+    diagonal = ""
+    for r in range(len(board)):
+        diagonal += board[r][r]
+    result = check_diagonal(diagonal)
+    if result == True:
+        return result
+    diagonal = ""
+    c = 0
+    for r in range(len(board)-1,-1,-1):
+        diagonal += board[r][c]
+        c += 1
+    result = check_diagonal(diagonal)
+    if result == True:
+        return result
+    return result
+    
+def check_diagonal(diagonal): #function to check each diagonal and return True if every value of the diagonal matches or return False if it doesnt
+    result = False
+    for index in range(len(diagonal)-1):
+        if diagonal[index] == '' or diagonal[index] == " ":
+            return False
+        else:
+            if diagonal[index] == diagonal[index+1]:
+                result = True
+            else:
+                return False
+    return result
+
 #below are some outputs to check if my code is correct or not using assert_equal() function
 
 assert_equal(
