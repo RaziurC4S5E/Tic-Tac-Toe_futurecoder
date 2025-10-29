@@ -7,6 +7,7 @@ Each Tasks are decribed below:
 
 2. write a similar function column_winner which checks for a winning column (a vertical line) of either piece
 
+<<<<<<< HEAD
 3. Now write a diagonal_winner that works for square boards of any size: 4-by-4, 5-by-5, and so on...
 
 4. Now we can put the three functions together! Write a function winner that takes an argument board as before, and returns True if board contains either a winning row, column or diagonal, False otherwise.
@@ -14,3 +15,6 @@ Each Tasks are decribed below:
 Your solution should work by calling the three functions. winner itself should not do any looping, subscripting, etc.
 
 #to check if recovery works
+=======
+3. Now write a diagonal_winner that works for square boards of any size: 4-by-4, 5-by-5, and so on...
+>>>>>>> aab57b7981b88599b2e02aa1664b64db93ca8f10
