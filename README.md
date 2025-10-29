@@ -12,3 +12,5 @@ Each Tasks are decribed below:
 4. Now we can put the three functions together! Write a function winner that takes an argument board as before, and returns True if board contains either a winning row, column or diagonal, False otherwise.
 
 Your solution should work by calling the three functions. winner itself should not do any looping, subscripting, etc.
+
+#to check if recovery works
