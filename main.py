@@ -43,9 +43,32 @@ def play_game(board_size, player1, player2):
     board = make_board(board_size)
     print(format_board(board))
 
-    play_move(board, player1)
-    play_move(board, player2)
-    play_move(board, player1)
-    play_move(board, player2)
+    result = winner(board)
+    move_count = 0
+    while not result:
+        if (move_count % 2 == 0):
+            play_move(board, player1)
+            move_count += 1
+            result = winner(board)
+            if result:
+                print_winner(player1)
+        else:
+            play_move(board, player2)
+            move_count += 1
+            result = winner(board)
+            if result:
+                print_winner(player2)
+
+        
+        if move_count == (board_size**2) and result == False:
+            print_draw()
+            result = True
+
+
+
+    # play_move(board, player1)
+    # play_move(board, player2)
+    # play_move(board, player1)
+    # play_move(board, player2)
 
 play_game(3, 'X', 'O')
