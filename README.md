@@ -17,3 +17,8 @@ Your solution should work by calling the three functions. winner itself should n
 5. Now write a diagonal_winner that works for square boards of any size: 4-by-4, 5-by-5, and so on...
 
 6. Reconnect
+
+31-Oct-2025
+
+7. Updated the full game from Futurecoder.io
+    7A. need to change the play_move() function to play the game properly
